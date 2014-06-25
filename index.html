@@ -3,7 +3,7 @@
 <head>
 	<title>Coff-Tek</title>
 	<meta charset="utf-8">
-	<link href='http://fonts.googleapis.com/css?family=Pinyon+Script' rel='stylesheet' type='text/css' />
+	<link href='http://fonts.googleapis.com/css?family=Pinyon+Script|Tangerine' rel='stylesheet' type='text/css' />
 	<style type="text/css">
 		html {
 			background: url("images/bg.jpg") no-repeat center center fixed;
@@ -42,45 +42,77 @@
 		div {
 			display: flex;
 			flex-flow: row wrap;
-			align-items: center;
 			width: 100%;
 			justify-content: center;
 		}
 		
 		section {
-			
 			padding: 20px;
 			width: 300px;
 		}
 		
-		section:first-of-type {
-			border: none;
+		section img {
+			width: 100px;
+			height: 100px;
 		}
 		
+		.halfBorder {
+			width: 50%;
+			height: 1px;
+			background-color: white;
+			margin: 0 auto;
+		}
+		
+		body > p {
+			color: rgb(255, 255, 200);
+			font-family: 'Tangerine', serif;
+			font-weight: lighter;
+			font-size: 30pt;
+			text-shadow: 0 0 5px black;
+		}
+		
+		a {
+			background-color: rgba(20, 20, 20, 0.1);
+			padding: 5px;
+			color: gray;
+			font-size: small;
+			text-shadow: none;
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
 	</style>
 </head>
 <body>
 	<h1>Coff-Tek</h1>
 	<ul>
-		<li>0427 00 11 54</li>
+		<li>0427 001 154</li>
 		<li>enquire@cofftek.com</li>
 	</ul>
 	<div>
 		<section>
+			<div class="halfBorder"></div>
 			<h2>Sales</h2>
-			<img src="images/sales.jpg" alt="salesIcon">
-			<p>Lorem ipsum dolor sit amet... Lorem ipsum dolor sit amet... Lorem ipsum dolor sit amet... Lorem ipsum dolor sit amet...</p>
+			<img src="images/sales.png" alt="salesIcon">
+			<p>We stock Commercial Espresso Machines, Grinders, Accessories and other espresso equipment.</p>
+			
 		</section>
 		<section>
+			<div class="halfBorder"></div>
 			<h2>Training</h2>
-			<img src="images/training.jpg" alt="trainingIcon">
-			<p>Lorem ipsum dolor sit amet... Lorem ipsum dolor sit amet... Lorem ipsum dolor sit amet... Lorem ipsum dolor sit amet...</p>
+			<img src="images/training.png" alt="trainingIcon">
+			<p>Knowing how to use and maintain an espresso machine will help you produce better coffee. Have your baristas trained by a qualified professional.</p>
+			
 		</section>
 		<section>
+			<div class="halfBorder"></div>
 			<h2>Servicing & Repairs</h2>
-			<img src="images/servicing.jpg" alt="servicingIcon">
-			<p>Lorem ipsum dolor sit amet... Lorem ipsum dolor sit amet... Lorem ipsum dolor sit amet... Lorem ipsum dolor sit amet...</p>
+			<img src="images/servicing.png" alt="servicingIcon">
+			<p>Extend the life of your commercial espresso equipment, and improve the flavour and consistency of your coffee.</p>
+			
 		</section>
 	</div>
+	<p>"Our goal is to help you make the best coffee possible."</p>
+	<a href="./attribution.txt">Background image derived from photo by Joe Mabel</a>
 </body>
 </html>
